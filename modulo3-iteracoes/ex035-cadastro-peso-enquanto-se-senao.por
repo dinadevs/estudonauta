@@ -4,9 +4,6 @@ programa
     {
         inteiro c = 0,
                 somaAcima = 0,
-                somaAbaixo = 0,
-                acimaPeso = 0,
-                abaixoPeso = 0,
                 numDigitado,
                 pesoRef = 0,
                 pesoPessoas = 0,
@@ -29,54 +26,30 @@ programa
        	escreva("Sexo M/F: ")
        	leia(sx)
 
-       	se(pesoPessoas <= pesoRef)
-       	{
-       		escreva("\n=== PESO DENTRO DO LIMITE (",pesoRef,"Kg) ===\n")
-
-       		se(sx == 'F' ou sx == 'f')
-       		{
-       			somaAbaixo += fem
-       			abaixoPeso++
-       			fem++  			
-       		}
-       		senao se(sx == 'M' ou sx == 'm')
-       		{
-       			somaAbaixo += masc
-       			abaixoPeso++
-       			masc++
-       		}
-       		senao
-       		{
-       			escreva("Digite M ou F")
-       		}
-       		
-       	}
-       	senao
+       	se(pesoPessoas > pesoRef)
        	{
        		escreva("\n=== PESO ACIMA DO LIMITE (",pesoRef,"Kg) ===\n")
 
        		se(sx == 'F' ou sx == 'f')
        		{
-       			somaAcima += fem
-       			acimaPeso++
-       			
+       			fem++
+       			somaAcima++			
        		}
        		senao se(sx == 'M' ou sx == 'm')
        		{
-       			somaAcima += masc
-       			acimaPeso++
+       			masc++
+       			somaAcima++     			
        		}
-       		senao
-       		{
-       			escreva("Digite M ou F")
-       		}
-       			
+       	}
+       	senao
+       	{
+       		escreva("\n=== PESO ABAIXO DO LIMITE (",pesoRef,"Kg) ===\n")     			
        	}
        	c++
        }
-       escreva("------------------------------------------------")
-        escreva("\nTemos ", acimaPeso, " pessoas acima do limite de: ", pesoRef)
-        escreva("\nQuantidade homens: ", masc, " | Quantidade mulheres: ", fem)
+        escreva("------------------------------------------------")
+        escreva("\nTemos ", somaAcima, " pessoas acima do limite de: ", pesoRef)
+        escreva("\nE dessas pessoas, ", masc, " são HOMENS e ", fem, " são MULHERES.")
         escreva("\n")
     }
 }
@@ -88,7 +61,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1967; 
+ * @POSICAO-CURSOR = 1057; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
