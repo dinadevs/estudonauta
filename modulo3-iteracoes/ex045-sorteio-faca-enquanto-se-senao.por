@@ -5,7 +5,6 @@ programa
     funcao inicio()
     {
         inteiro numSorteado, tentativas = 0, chute
-        logico acertou = falso
 
         numSorteado = u.sorteia(1, 10)
 
@@ -22,7 +21,6 @@ programa
             se (chute == numSorteado)
             {
                 escreva("\nParabéns! Você acertou em ", tentativas, " tentativa(s)!\n")
-                acertou = verdadeiro
             }
             senao se (chute < numSorteado)
             {
@@ -34,9 +32,9 @@ programa
             }
 
         }
-        enquanto (tentativas < 3 e acertou == falso)
+        enquanto (tentativas < 3 e chute != numSorteado)
 
-        se (acertou == falso)
+        se (chute != numSorteado)
         {
             escreva("\nSuas chances acabaram! O número sorteado era ", numSorteado, "\n")
         }
@@ -48,7 +46,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 375; 
+ * @POSICAO-CURSOR = 852; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
