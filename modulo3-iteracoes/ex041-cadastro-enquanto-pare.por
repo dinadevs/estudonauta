@@ -1,6 +1,8 @@
 programa
 {
-	inclua biblioteca Matematica --> mat
+	inclua biblioteca Matematica --> mat
+	inclua biblioteca Texto --> t
+	inclua biblioteca Tipos --> ti
 	funcao inicio()
 	{
 		inteiro c = 0, idade = 0, idMaisNovo = 0, idMaisVelho = 0, somaIdade = 0
@@ -14,7 +16,7 @@ programa
 				escreva("Nome: ")
 				leia(nome)
 				
-				se(nome == "ACABOU" ou nome == "acabou")
+				se(t.caixa_alta(nome) == "ACABOU")
 				{
 					pare
 				}	
@@ -50,7 +52,7 @@ programa
 			}
 			c++
 		}
-		media = somaIdade / c
+		media = ti.inteiro_para_real(somaIdade) / ti.inteiro_para_real(c)
 		
 		escreva("\n** Interrompido **\n")
 		escreva("\nTotal de amigos cadastrados: ", c)
@@ -65,7 +67,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 344; 
+ * @POSICAO-CURSOR = 1074; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

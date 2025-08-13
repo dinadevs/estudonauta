@@ -1,6 +1,5 @@
 programa
 {
-	inclua biblioteca Util --> u
 	
 	funcao inicio()
 	{
@@ -18,8 +17,8 @@ programa
 		
 		enquanto(c < qtdNumSorteados)
 		{	
-			numSorteio = u.sorteia(1, 50)		
-			escreva(numSorteio, " ")
+			numSorteio = sorteia(1, 50)		
+			escreva(numSorteio, ", ")
 			 
 			se(numSorteio > 5)
 			{
@@ -32,6 +31,7 @@ programa
 			
 			c++
 		}
+		escreva("Fim")
 		escreva("\n\n",qtdNumSorteados, " números sorteados\n")	
 		escreva(nMaiorCinco, " são maiores que 5\n")
 		escreva(nDivisiveisTres, " são divisíveis por 3\n")   	
@@ -43,7 +43,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 409; 
+ * @POSICAO-CURSOR = 322; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

@@ -43,6 +43,10 @@ programa
 				escreva("Digite o segundo número: ")
 				leia(n2)
 			}
+			senao se(opcao == 5)
+			{
+				escreva("Volte sempre!")
+			}
 			senao
 			{
 				escreva("Opção inválida! Tente novamente.\n")
@@ -55,7 +59,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1059; 
+ * @POSICAO-CURSOR = 1050; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

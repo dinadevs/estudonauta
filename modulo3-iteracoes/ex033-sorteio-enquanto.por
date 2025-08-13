@@ -1,6 +1,6 @@
 programa
 {
-	inclua biblioteca Util --> u
+	inclua biblioteca Util --> u
 	funcao inicio()
 	{
 		inteiro qtdNumSorteados, 
@@ -15,11 +15,12 @@ programa
 
 		enquanto(c < qtdNumSorteados)
 		{
-			numSorteado = u.sorteia(1, 100)
-			escreva("O ", c + 1,"° valor sorteado: ",numSorteado,"\n")
+			numSorteado = sorteia(1, 100)
+			escreva(c + 1,"° número sorteado: ",numSorteado,"\n")
 			
 			somaNumSorteado += numSorteado
 			c++
+			u.aguarde(400)
 		}
 		escreva("\nSoma dos ", qtdNumSorteados, " números sorteados: ", somaNumSorteado, "\n")
 	}
@@ -29,7 +30,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 364; 
+ * @POSICAO-CURSOR = 462; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

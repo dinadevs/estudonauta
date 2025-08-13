@@ -1,5 +1,7 @@
 programa
-{
+{	
+    inclua biblioteca Tipos --> t
+    inclua biblioteca Matematica --> m
     funcao inicio()
     {
         inteiro c = 0,
@@ -31,16 +33,16 @@ programa
        
        se (qtdPar > 0)
        {
-       	mediaPar = somaPar / qtdPar
+       	mediaPar = t.inteiro_para_real(somaPar) / qtdPar
        }
        
        se (qtdImpar > 0)
        {
-       	mediaImpar = somaImpar / qtdImpar
+       	mediaImpar = t.inteiro_para_real(somaImpar) / qtdImpar
        }
 
-        escreva("\nQuantidade de pares: ", qtdPar, " | Média dos pares: ", mediaPar)
-        escreva("\nQuantidade de ímpares: ", qtdImpar, " | Média dos ímpares: ", mediaImpar)
+        escreva("\nQuantidade de pares: ", qtdPar, " | Média dos pares: ", m.arredondar(mediaPar, 2))
+        escreva("\nQuantidade de ímpares: ", qtdImpar, " | Média dos ímpares: ", m.arredondar(mediaImpar, 2))
         escreva("\n")
     }
 }
@@ -50,7 +52,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 948; 
+ * @POSICAO-CURSOR = 1075; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
