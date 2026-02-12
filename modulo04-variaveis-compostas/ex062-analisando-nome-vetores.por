@@ -5,9 +5,9 @@ programa
 	inclua biblioteca Texto --> tx
 	funcao inicio()
 	{
-		cadeia nomes[5]
-		caracter sx[5]
-		real slr[5]
+		cadeia nomes[6]
+		caracter sx[6]
+		real slr[6]
 
 		para(inteiro p = 0; p < u.numero_elementos(nomes); p++) {
 			escreva("══════════ Cadastro  ", p + 1," ══════════\n")
@@ -53,7 +53,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 171; 
+ * @POSICAO-CURSOR = 516; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
