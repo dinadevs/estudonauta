@@ -1,4 +1,4 @@
-# 💻 Exercícios do Estudonauta 
+# 💻 Exercícios do Estudonauta <img align="right" src="https://img.shields.io/badge/status-Done-success" alt="Done">
 
 Este repositório contém exercícios resolvidos dos módulos do curso **Programação Básica**, utilizando o **Portugol Studio**.
 
